@@ -41,90 +41,132 @@ st.markdown(
     """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-    /* Global Bot Matrix Monospace Font Stack */
-    html, body, [class*="css"], .stMarkdown, .stText, p, span, div, input, select, button, label, textarea {
-        font-family: 'JetBrains Mono', 'Share Tech Mono', Consolas, 'Courier New', monospace !important;
+    /* Global Bot Matrix Monospace Font Stack (excluding icon glyphs) */
+    html, body, .stApp {
+        font-family: 'JetBrains Mono', 'Share Tech Mono', Consolas, monospace !important;
     }
 
-    h1, h2, h3, h4, h5, h6, .hero-title, .metric-title {
+    .stMarkdown, .stText, p, label, input, select, textarea, .stTabs [data-baseweb="tab"] {
+        font-family: 'JetBrains Mono', 'Share Tech Mono', Consolas, monospace !important;
+        font-size: 0.84rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
         font-family: 'Share Tech Mono', 'JetBrains Mono', Consolas, monospace !important;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.04em;
     }
 
-    /* Matrix Hero Banner */
+    /* CRITICAL FIX: Protect Material Icons & Symbols from being overridden by monospace font */
+    [data-testid="stIconMaterial"],
+    [data-testid="stIconEmoji"],
+    [data-testid*="Icon"],
+    [data-testid="stSidebarCollapseButton"],
+    [data-testid="stSidebarCollapseButton"] *,
+    [data-testid="collapsedControl"],
+    [data-testid="collapsedControl"] *,
+    button[kind="header"],
+    button[kind="header"] *,
+    button[kind="headerNoPadding"],
+    button[kind="headerNoPadding"] *,
+    [data-testid="stToolbar"] *,
+    .material-symbols-rounded,
+    .material-symbols-outlined,
+    .material-icons,
+    [class*="material-symbols"] {
+        font-family: "Material Symbols Rounded", "Material Symbols Outlined", "Material Icons" !important;
+        font-feature-settings: "liga" 1 !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        direction: ltr !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
+
+    /* Tighten layout scaling for compact, well-proportioned dashboards */
+    .block-container {
+        padding-top: 1.0rem !important;
+        padding-bottom: 2rem !important;
+        max-width: 98% !important;
+    }
+
+    /* Matrix Orange Hero Banner */
     .hero-container {
-        background: linear-gradient(135deg, #050b0a 0%, #0d1a16 50%, #07120e 100%);
-        border: 1px solid rgba(0, 255, 136, 0.3);
-        border-radius: 12px;
-        padding: 24px 28px;
-        margin-bottom: 24px;
+        background: linear-gradient(135deg, #120b04 0%, #1e1105 50%, #140c04 100%);
+        border: 1px solid rgba(255, 153, 0, 0.45);
+        border-radius: 10px;
+        padding: 14px 20px;
+        margin-bottom: 14px;
         color: #ffffff;
-        box-shadow: 0 0 30px rgba(0, 255, 136, 0.08), inset 0 0 15px rgba(0, 255, 136, 0.03);
+        box-shadow: 0 0 25px rgba(255, 153, 0, 0.14), inset 0 0 15px rgba(255, 153, 0, 0.03);
     }
     .hero-tag {
         display: inline-block;
-        background: rgba(0, 255, 136, 0.12);
-        color: #00ff88;
-        border: 1px solid rgba(0, 255, 136, 0.45);
-        font-size: 0.72rem;
+        background: rgba(255, 153, 0, 0.16);
+        color: #ff9900;
+        border: 1px solid rgba(255, 153, 0, 0.55);
+        font-size: 0.68rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.14em;
-        padding: 4px 12px;
+        letter-spacing: 0.12em;
+        padding: 3px 10px;
         border-radius: 4px;
-        margin-bottom: 12px;
+        margin-bottom: 6px;
         font-family: 'Share Tech Mono', monospace !important;
+        text-shadow: 0 0 8px rgba(255, 153, 0, 0.35);
     }
     .hero-title {
-        font-size: 1.7rem;
+        font-size: 1.38rem;
         font-weight: 800;
-        letter-spacing: 0.03em;
-        margin-bottom: 8px;
-        color: #f8fafc;
-        text-shadow: 0 0 12px rgba(0, 255, 136, 0.25);
+        letter-spacing: 0.02em;
+        margin-bottom: 4px;
+        color: #ff9900;
+        text-shadow: 0 0 14px rgba(255, 153, 0, 0.45);
+        font-family: 'Share Tech Mono', monospace !important;
     }
     .hero-subtitle {
-        font-size: 0.88rem;
-        color: #94a3b8;
-        line-height: 1.6;
+        font-size: 0.80rem;
+        color: #cbd5e1;
+        line-height: 1.45;
         letter-spacing: 0.01em;
         margin-bottom: 0px;
     }
 
-    /* Matrix KPI Stat Cards */
+    /* Scaled Matrix KPI Stat Cards */
     .metric-card {
-        background: rgba(13, 26, 22, 0.45);
-        border: 1px solid rgba(0, 255, 136, 0.22);
+        background: rgba(15, 23, 42, 0.55);
+        border: 1px solid rgba(255, 153, 0, 0.25);
         border-radius: 8px;
-        padding: 16px 18px;
+        padding: 10px 14px;
         transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
     .metric-card:hover {
-        border-color: rgba(0, 255, 136, 0.65);
-        box-shadow: 0 0 18px rgba(0, 255, 136, 0.2);
+        border-color: rgba(255, 153, 0, 0.65);
+        box-shadow: 0 0 14px rgba(255, 153, 0, 0.2);
         transform: translateY(-2px);
     }
     .metric-title {
-        font-size: 0.75rem;
+        font-size: 0.66rem;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #64748b;
-        margin-bottom: 4px;
+        letter-spacing: 0.06em;
+        color: #94a3b8;
+        margin-bottom: 2px;
     }
     .metric-value {
-        font-size: 1.6rem;
+        font-size: 1.30rem;
         font-weight: 800;
-        color: #00ff88;
+        color: #ff9900;
         margin-bottom: 2px;
-        text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        text-shadow: 0 0 8px rgba(255, 153, 0, 0.25);
     }
     .metric-sub {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         color: #00e5ff;
         font-weight: 500;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.01em;
     }
 
     /* Action Badges */
@@ -132,50 +174,50 @@ st.markdown(
         background-color: rgba(239, 68, 68, 0.18);
         color: #f87171;
         border: 1px solid rgba(239, 68, 68, 0.4);
-        padding: 3px 8px;
+        padding: 2px 7px;
         border-radius: 4px;
         font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         letter-spacing: 0.04em;
     }
     .badge-gateway {
         background-color: rgba(245, 158, 11, 0.18);
         color: #fbbf24;
         border: 1px solid rgba(245, 158, 11, 0.4);
-        padding: 3px 8px;
+        padding: 2px 7px;
         border-radius: 4px;
         font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         letter-spacing: 0.04em;
     }
     .badge-sso {
         background-color: rgba(59, 130, 246, 0.18);
         color: #60a5fa;
         border: 1px solid rgba(59, 130, 246, 0.4);
-        padding: 3px 8px;
+        padding: 2px 7px;
         border-radius: 4px;
         font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         letter-spacing: 0.04em;
     }
     .badge-coexist {
         background-color: rgba(16, 185, 129, 0.18);
         color: #34d399;
         border: 1px solid rgba(16, 185, 129, 0.4);
-        padding: 3px 8px;
+        padding: 2px 7px;
         border-radius: 4px;
         font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         letter-spacing: 0.04em;
     }
 
     /* Subheader Stylings */
     .section-header {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         font-weight: 700;
         letter-spacing: 0.02em;
-        margin-top: 10px;
-        margin-bottom: 8px;
+        margin-top: 8px;
+        margin-bottom: 6px;
     }
     </style>
     """,
@@ -425,6 +467,9 @@ def main():
         color_discrete = px.colors.qualitative.Bold
 
         if proj_dimension == "3D Interactive Space" and proj_type.startswith("PCA"):
+            st.markdown(
+                f"##### 3D PCA Manifold (PC1: {pca_full.explained_variance_ratio_[0]*100:.1f}%, PC2: {pca_full.explained_variance_ratio_[1]*100:.1f}%, PC3: {pca_full.explained_variance_ratio_[2]*100:.1f}% var)"
+            )
             fig_cluster = px.scatter_3d(
                 cluster_df,
                 x="PC1",
@@ -435,21 +480,14 @@ def main():
                 hover_data={"tier": True, "PC1": False, "PC2": False, "PC3": False, "dynamic_cluster": True},
                 color_discrete_sequence=color_discrete,
                 labels={"dynamic_cluster": "Cluster"},
-                height=650,
+                height=520,
                 template="plotly_dark",
             )
             fig_cluster.update_traces(
                 marker=dict(size=7, opacity=0.88, line=dict(width=0.5, color="#ffffff"))
             )
             fig_cluster.update_layout(
-                title=dict(
-                    text=f"3D PCA Manifold (PC1: {pca_full.explained_variance_ratio_[0]*100:.1f}%, PC2: {pca_full.explained_variance_ratio_[1]*100:.1f}%, PC3: {pca_full.explained_variance_ratio_[2]*100:.1f}% var)",
-                    x=0.01,
-                    y=0.98,
-                    xanchor="left",
-                    font=dict(family="'Share Tech Mono', monospace", size=14),
-                ),
-                font=dict(family="'JetBrains Mono', monospace"),
+                font=dict(family="'JetBrains Mono', monospace", size=11),
                 legend=dict(
                     orientation="h",
                     yanchor="top",
@@ -458,7 +496,7 @@ def main():
                     x=0.5,
                     title_text="",
                 ),
-                margin=dict(l=10, r=10, b=40, t=50),
+                margin=dict(l=10, r=10, b=30, t=10),
                 scene=dict(
                     xaxis_title=f"PC1 ({pca_full.explained_variance_ratio_[0]*100:.1f}%)",
                     yaxis_title=f"PC2 ({pca_full.explained_variance_ratio_[1]*100:.1f}%)",
@@ -476,6 +514,10 @@ def main():
                 x_col, y_col = "umap_1", "umap_2"
                 x_label, y_label = "UMAP Dimension 1", "UMAP Dimension 2"
 
+            st.markdown(
+                f"##### Platform Clusters in {proj_type} Space (Algorithm: {algorithm}, k={int(metrics['n_clusters'])})"
+            )
+
             fig_cluster = px.scatter(
                 cluster_df,
                 x=x_col,
@@ -485,22 +527,14 @@ def main():
                 hover_data={"tier": True, x_col: False, y_col: False, "dynamic_cluster": True},
                 color_discrete_sequence=color_discrete,
                 labels={"dynamic_cluster": "Cluster"},
-                height=580,
+                height=480,
                 template="plotly_dark",
             )
             fig_cluster.update_traces(
-                marker=dict(size=14, line=dict(width=1.0, color="#ffffff"), opacity=0.9)
+                marker=dict(size=13, line=dict(width=1.0, color="#ffffff"), opacity=0.9)
             )
             fig_cluster.update_layout(
-                title=dict(
-                    text=f"Platform Clusters in {proj_type} Space (Algorithm: {algorithm}, k={metrics['n_clusters']:.0f})",
-                    x=0.01,
-                    y=0.98,
-                    xanchor="left",
-                    yanchor="top",
-                    font=dict(family="'Share Tech Mono', monospace", size=14),
-                ),
-                font=dict(family="'JetBrains Mono', monospace"),
+                font=dict(family="'JetBrains Mono', monospace", size=11),
                 xaxis_title=x_label,
                 yaxis_title=y_label,
                 legend=dict(
@@ -511,7 +545,7 @@ def main():
                     x=0.5,
                     title_text="",
                 ),
-                margin=dict(t=50, b=80, l=40, r=40),
+                margin=dict(t=15, b=65, l=40, r=20),
             )
             st.plotly_chart(fig_cluster, use_container_width=True)
 
@@ -612,7 +646,7 @@ def main():
             zmin=0.0,
             zmax=1.0,
             aspect="auto",
-            height=620,
+            height=500,
             template="plotly_dark",
         )
         fig_heat.update_layout(
@@ -736,7 +770,7 @@ def main():
 
             fig_scree.update_layout(
                 template="plotly_dark",
-                height=460,
+                height=380,
                 title=dict(text="Cumulative & Individual Explained Variance", x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
                 font=dict(family="'JetBrains Mono', monospace"),
                 yaxis=dict(title="Individual Variance (%)", showgrid=True, gridcolor="#1e293b"),
@@ -771,7 +805,7 @@ def main():
                 color="loading_weight",
                 color_continuous_scale="RdBu",
                 title=f"Highest Magnitude Drivers for {comp_selected}",
-                height=460,
+                height=380,
                 template="plotly_dark",
             )
             fig_bar.update_layout(
@@ -804,7 +838,7 @@ def main():
             barmode="group",
             title="Ground Truth Alignment (ARI) across Representations",
             labels={"adjusted_rand_index": "Adjusted Rand Index (ARI)", "representation": "Representation"},
-            height=390,
+            height=340,
             template="plotly_dark",
             color_discrete_sequence=["#00ff88", "#00e5ff", "#f59e0b"],
         )
