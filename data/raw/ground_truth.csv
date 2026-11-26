@@ -1,0 +1,50 @@
+platform_id,platform_name,ground_truth_cluster,cluster_name,policy_action,is_distractor
+PLT_000,Central e-District National Portal,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_001,State e-Seva Citizen Gateway A,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_002,State e-Seva Citizen Gateway B,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_003,Municipal Jan Seva Portal North,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_004,Gramin Citizen Services Kiosk Hub,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_005,State Unified Certificate Portal,0,Citizen Certificates & Vital Identity Hubs,Single Sign-On (SSO) & DigiLocker auth sharing,False
+PLT_006,PM-KISAN Direct Benefit Portal,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_007,State Krishi Sahayata App,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_008,Kisan Suvidha Agri Services,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_009,Kisan Crop Insurance Hub,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_010,State Soil Health & Mandi Gateway,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_011,Farmer DBT Subsidy Network,1,Farmer Welfare & Agritech Systems,Complete architectural merger & unified portal,False
+PLT_012,National Pension System Citizen Access,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_013,Jeevan Pramaan Digital Life Certificate,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_014,State Vridha & Divyang Pension Portal,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_015,EPFO Member Passbook & Pension,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_016,State Social Security Pension Desk,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_017,Senior Citizen Welfare Registry,2,Pensions & Senior Social Security,Single Sign-On (SSO) & shared API gateway,False
+PLT_018,SARATHI Citizen Driving License Portal,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_019,VAHAN Vehicle Registration System,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_020,State Parivahan Citizen Services,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_021,City E-Challan & Road Safety Portal,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_022,State Commercial Transport Gateway,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_023,Motor Driving Kiosk System,3,Transport & Motor Vehicle Regulation,Complete architectural merger & unified portal,False
+PLT_024,State Bhulekh Land Records System A,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_025,State Bhulekh Land Records System B,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_026,National Land Records Modernization,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_027,Property Registration & Stamp Duty Portal,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_028,Bhoomi Mutation & Encumbrance Hub,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_029,Urban Land Survey & Cadastral GIS,4,Land Records & Revenue Administration,Shared API gateway & common schema,False
+PLT_030,Ayushman Bharat ABHA Health Hub,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_031,CoWIN Vaccination & Health Passport,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_032,e-Sanjeevani National Telemedicine,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_033,State Swasthya Bima Health Desk,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_034,City Hospital OPD Booking System,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_035,Maternal & Child Health Tracking Portal,5,Healthcare & Universal Health Coverage,Shared API gateway & common schema,False
+PLT_036,Smart City Municipal Bill Desk,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_037,State Electricity Urja Portal,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_038,Urban Jal Nigam Water & Sewerage,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_039,Clean City Civic Grievance Network,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_040,State Solar Rooftop Subsidy App,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_041,City Gas & Energy Consumer Portal,6,Municipal Civic Utilities & Energy Services,Complete architectural merger & unified portal,False
+PLT_042,State Archaeological & Heritage Tourism Portal,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_043,National Disaster Alert & Siren Network,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_044,Tribal Handicraft & Artisan Direct Market,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_045,Khadi Village Industries e-Bazaar,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_046,Geological Survey Rock & Mineral GeoData,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_047,State Wildlife Sanctuary & Eco-Pass System,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True
+PLT_048,Public Library & Open Knowledge Archive,-1,Niche Administrative Distractor,Maintain independent coexistence with federated discovery,True

@@ -1,0 +1,58 @@
+seed: 42
+
+data_generation:
+  num_platforms: 52
+  num_services: 210
+  num_categories: 15
+  num_ground_truth_clusters: 7
+  noise_platform_count: 7
+  missing_rate: 0.05
+  correlation_pairs: 3
+
+features:
+  tfidf_max_features: 80
+  svd_text_components: 20
+  imputation_strategy_numeric: "median"
+  imputation_strategy_categorical: "most_frequent"
+  scaling: "standard"
+
+reduction:
+  pca_target_variance: 0.92
+  scree_max_components: 25
+  top_loadings_per_component: 5
+  umap_n_neighbors: 12
+  umap_min_dist: 0.1
+  umap_n_components: 2
+
+clustering:
+  k_min: 3
+  k_max: 12
+  default_k: 7
+  hdbscan_min_cluster_size: 3
+  hdbscan_min_samples: 2
+  agglomerative_linkage: "ward"
+  stability_seeds: [42, 101, 202, 303, 404]
+
+overlap:
+  high_overlap_threshold: 0.65
+  medium_overlap_threshold: 0.40
+  policy_actions:
+    merger: "High redundancy candidate: Recommend complete architectural merger & unified portal"
+    api_unification: "Cross-departmental overlap: Recommend shared API gateway & common schema"
+    sso_integration: "Functional similarity: Recommend Single Sign-On (SSO) & DigiLocker auth sharing"
+    coexistence: "Distinct operational niche: Maintain independent coexistence with federated discovery"
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  platforms_csv: "data/raw/platforms.csv"
+  services_csv: "data/raw/services.csv"
+  ground_truth_csv: "data/raw/ground_truth.csv"
+  features_csv: "data/processed/features_matrix.csv"
+  pca_features_npy: "data/processed/features_pca.npy"
+  pca_loadings_csv: "data/processed/pca_loadings.csv"
+  scree_plot_csv: "data/processed/scree_data.csv"
+  cluster_results_csv: "data/processed/cluster_results.csv"
+  benchmark_csv: "data/processed/benchmark.csv"
+  overlap_matrix_csv: "data/processed/overlap_matrix.csv"
+  recommendations_csv: "data/processed/recommendations.csv"

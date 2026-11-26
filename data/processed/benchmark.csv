@@ -1,0 +1,25 @@
+representation,representation_type,dimensions,algorithm,silhouette,davies_bouldin,calinski_harabasz,adjusted_rand_index,normalized_mutual_info,seed_stability_ari,noise_ratio
+Raw (Unreduced),Raw,149,K-Means,0.1464,1.8036,4.48,0.8579,0.9574,0.7176,0.0
+Raw (Unreduced),Raw,149,Agglomerative,0.1479,1.8776,4.54,0.8372,0.9539,1.0,0.0
+Raw (Unreduced),Raw,149,HDBSCAN,0.1831,1.4544,4.67,0.8052,0.8994,1.0,0.1429
+PCA (5 dims),PCA,5,K-Means,0.4717,0.7461,33.45,0.8579,0.9574,1.0,0.0
+PCA (5 dims),PCA,5,Agglomerative,0.4717,0.7461,33.45,0.8579,0.9574,1.0,0.0
+PCA (5 dims),PCA,5,HDBSCAN,0.4835,0.723,38.03,1.0,1.0,1.0,0.0
+PCA (10 dims),PCA,10,K-Means,0.3373,1.1996,11.89,0.8105,0.928,0.9746,0.0
+PCA (10 dims),PCA,10,Agglomerative,0.341,1.1794,12.04,0.8372,0.9539,1.0,0.0
+PCA (10 dims),PCA,10,HDBSCAN,0.397,0.9046,14.44,0.9209,0.9578,1.0,0.0612
+PCA (15 dims),PCA,15,K-Means,0.2459,1.4692,7.67,0.8372,0.9539,0.8093,0.0
+PCA (15 dims),PCA,15,Agglomerative,0.2459,1.4692,7.67,0.8372,0.9539,1.0,0.0
+PCA (15 dims),PCA,15,HDBSCAN,0.2805,1.2156,8.44,0.9467,0.9718,1.0,0.1224
+PCA (20 dims),PCA,20,K-Means,0.2035,1.6367,6.11,0.8372,0.9539,0.8545,0.0
+PCA (20 dims),PCA,20,Agglomerative,0.2035,1.6367,6.11,0.8372,0.9539,1.0,0.0
+PCA (20 dims),PCA,20,HDBSCAN,0.2436,1.2646,6.7,0.9443,0.9771,1.0,0.0816
+PCA (25 dims),PCA,25,K-Means,0.1747,1.6709,5.29,0.8579,0.9574,0.8089,0.0
+PCA (25 dims),PCA,25,Agglomerative,0.1774,1.7372,5.36,0.8372,0.9539,1.0,0.0
+PCA (25 dims),PCA,25,HDBSCAN,0.2188,1.3575,5.76,0.9022,0.9521,1.0,0.102
+"PCA (92% Var, 27 dims)",PCA,27,K-Means,0.1702,1.7652,5.17,0.8372,0.9539,0.844,0.0
+"PCA (92% Var, 27 dims)",PCA,27,Agglomerative,0.1702,1.7652,5.17,0.8372,0.9539,1.0,0.0
+"PCA (92% Var, 27 dims)",PCA,27,HDBSCAN,0.207,1.3578,5.47,0.8557,0.9262,1.0,0.1224
+UMAP (2 dims),UMAP,2,K-Means,0.6258,0.4766,139.69,0.8105,0.928,0.9746,0.0
+UMAP (2 dims),UMAP,2,Agglomerative,0.6245,0.4723,139.66,0.7952,0.9252,1.0,0.0
+UMAP (2 dims),UMAP,2,HDBSCAN,0.6599,0.4316,231.72,0.9231,0.9591,1.0,0.0204

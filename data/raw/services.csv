@@ -1,0 +1,211 @@
+service_id,service_name,category,description,complexity_score
+SRV_0001,Certificates Vital Stats Service #1,certificates_vital_stats,"Online application, verification, and issuance of caste and domicile certificate with Aadhaar biometric validation.",4.1
+SRV_0002,Certificates Vital Stats Service #2,certificates_vital_stats,Registration of birth and issuance of digital birth certificates with QR verification.,2.76
+SRV_0003,Certificates Vital Stats Service #3,certificates_vital_stats,Legal marriage registration portal with witness e-KYC and digital certificate generation.,4.43
+SRV_0004,Certificates Vital Stats Service #4,certificates_vital_stats,Annual family income certificate verification integrated with state revenue databases.,3.79
+SRV_0005,Certificates Vital Stats Service #5,certificates_vital_stats,Non-creamy layer OBC certificate processing and digital signature verification.,1.38
+SRV_0006,Certificates Vital Stats Service #6,certificates_vital_stats,"Online application, verification, and issuance of caste and domicile certificate with Aadhaar biometric validation.",4.9
+SRV_0007,Certificates Vital Stats Service #7,certificates_vital_stats,Registration of birth and issuance of digital birth certificates with QR verification.,4.04
+SRV_0008,Certificates Vital Stats Service #8,certificates_vital_stats,Legal marriage registration portal with witness e-KYC and digital certificate generation.,4.14
+SRV_0009,Certificates Vital Stats Service #9,certificates_vital_stats,Annual family income certificate verification integrated with state revenue databases.,1.51
+SRV_0010,Certificates Vital Stats Service #10,certificates_vital_stats,Non-creamy layer OBC certificate processing and digital signature verification.,2.8
+SRV_0011,Certificates Vital Stats Service #11,certificates_vital_stats,"Online application, verification, and issuance of caste and domicile certificate with Aadhaar biometric validation.",2.48
+SRV_0012,Certificates Vital Stats Service #12,certificates_vital_stats,Registration of birth and issuance of digital birth certificates with QR verification.,4.71
+SRV_0013,Certificates Vital Stats Service #13,certificates_vital_stats,Legal marriage registration portal with witness e-KYC and digital certificate generation.,3.58
+SRV_0014,Certificates Vital Stats Service #14,certificates_vital_stats,Annual family income certificate verification integrated with state revenue databases.,4.29
+SRV_0015,Pensions Elderly Care Service #1,pensions_elderly_care,National social assistance scheme monthly pension disbursal and bank Aadhaar-linkage status.,2.77
+SRV_0016,Pensions Elderly Care Service #2,pensions_elderly_care,Digital life certificate verification using facial recognition and iris biometric scanners.,1.91
+SRV_0017,Pensions Elderly Care Service #3,pensions_elderly_care,Indira Gandhi national old age pension registration and grievance redressal system.,3.22
+SRV_0018,Pensions Elderly Care Service #4,pensions_elderly_care,Divyang disability pension monthly stipend application and medical board verification.,1.26
+SRV_0019,Pensions Elderly Care Service #5,pensions_elderly_care,Widow and destitute women social security pension processing with bank DBT.,4.31
+SRV_0020,Pensions Elderly Care Service #6,pensions_elderly_care,National social assistance scheme monthly pension disbursal and bank Aadhaar-linkage status.,3.53
+SRV_0021,Pensions Elderly Care Service #7,pensions_elderly_care,Digital life certificate verification using facial recognition and iris biometric scanners.,4.03
+SRV_0022,Pensions Elderly Care Service #8,pensions_elderly_care,Indira Gandhi national old age pension registration and grievance redressal system.,2.42
+SRV_0023,Pensions Elderly Care Service #9,pensions_elderly_care,Divyang disability pension monthly stipend application and medical board verification.,4.88
+SRV_0024,Pensions Elderly Care Service #10,pensions_elderly_care,Widow and destitute women social security pension processing with bank DBT.,4.57
+SRV_0025,Pensions Elderly Care Service #11,pensions_elderly_care,National social assistance scheme monthly pension disbursal and bank Aadhaar-linkage status.,4.11
+SRV_0026,Pensions Elderly Care Service #12,pensions_elderly_care,Digital life certificate verification using facial recognition and iris biometric scanners.,1.78
+SRV_0027,Pensions Elderly Care Service #13,pensions_elderly_care,Indira Gandhi national old age pension registration and grievance redressal system.,2.87
+SRV_0028,Pensions Elderly Care Service #14,pensions_elderly_care,Divyang disability pension monthly stipend application and medical board verification.,1.18
+SRV_0029,Revenue Taxes Service #1,revenue_taxes,"Annual urban property tax assessment, payment gateway, and computerized receipt generation.",1.62
+SRV_0030,Revenue Taxes Service #2,revenue_taxes,"Commercial trade license fee calculation, professional tax filing, and digital receipt.",3.73
+SRV_0031,Revenue Taxes Service #3,revenue_taxes,Water and sewerage consumption bill payment and tax recovery portal.,3.98
+SRV_0032,Revenue Taxes Service #4,revenue_taxes,Stamp duty valuation calculator and online deed registration appointment scheduling.,4.87
+SRV_0033,Revenue Taxes Service #5,revenue_taxes,State excise and commercial revenue e-challan clearing system.,2.3
+SRV_0034,Revenue Taxes Service #6,revenue_taxes,"Annual urban property tax assessment, payment gateway, and computerized receipt generation.",2.48
+SRV_0035,Revenue Taxes Service #7,revenue_taxes,"Commercial trade license fee calculation, professional tax filing, and digital receipt.",2.88
+SRV_0036,Revenue Taxes Service #8,revenue_taxes,Water and sewerage consumption bill payment and tax recovery portal.,1.76
+SRV_0037,Revenue Taxes Service #9,revenue_taxes,Stamp duty valuation calculator and online deed registration appointment scheduling.,1.52
+SRV_0038,Revenue Taxes Service #10,revenue_taxes,State excise and commercial revenue e-challan clearing system.,2.9
+SRV_0039,Revenue Taxes Service #11,revenue_taxes,"Annual urban property tax assessment, payment gateway, and computerized receipt generation.",1.91
+SRV_0040,Revenue Taxes Service #12,revenue_taxes,"Commercial trade license fee calculation, professional tax filing, and digital receipt.",3.68
+SRV_0041,Revenue Taxes Service #13,revenue_taxes,Water and sewerage consumption bill payment and tax recovery portal.,2.75
+SRV_0042,Revenue Taxes Service #14,revenue_taxes,Stamp duty valuation calculator and online deed registration appointment scheduling.,4.33
+SRV_0043,Health Medical Service #1,health_medical,Ayushman Bharat PM-JAY electronic health card generation and cashless hospital claim settlement.,3.8
+SRV_0044,Health Medical Service #2,health_medical,Digital outpatient OPD consultation token generation and doctor appointment scheduler.,2.25
+SRV_0045,Health Medical Service #3,health_medical,Telemedicine consultation platform connecting rural health centers to super-specialty doctors.,4.33
+SRV_0046,Health Medical Service #4,health_medical,National immunization tracker and child vaccination schedule notification service.,4.22
+SRV_0047,Health Medical Service #5,health_medical,Emergency blood bank real-time inventory discovery and donor registration network.,2.55
+SRV_0048,Health Medical Service #6,health_medical,Ayushman Bharat PM-JAY electronic health card generation and cashless hospital claim settlement.,2.15
+SRV_0049,Health Medical Service #7,health_medical,Digital outpatient OPD consultation token generation and doctor appointment scheduler.,3.73
+SRV_0050,Health Medical Service #8,health_medical,Telemedicine consultation platform connecting rural health centers to super-specialty doctors.,1.56
+SRV_0051,Health Medical Service #9,health_medical,National immunization tracker and child vaccination schedule notification service.,1.8
+SRV_0052,Health Medical Service #10,health_medical,Emergency blood bank real-time inventory discovery and donor registration network.,1.03
+SRV_0053,Health Medical Service #11,health_medical,Ayushman Bharat PM-JAY electronic health card generation and cashless hospital claim settlement.,4.15
+SRV_0054,Health Medical Service #12,health_medical,Digital outpatient OPD consultation token generation and doctor appointment scheduler.,3.66
+SRV_0055,Health Medical Service #13,health_medical,Telemedicine consultation platform connecting rural health centers to super-specialty doctors.,3.82
+SRV_0056,Health Medical Service #14,health_medical,National immunization tracker and child vaccination schedule notification service.,4.12
+SRV_0057,Education Scholarships Service #1,education_scholarships,"Post-matric scholarship portal for SC, ST, and minority students with direct DBT transfer.",2.84
+SRV_0058,Education Scholarships Service #2,education_scholarships,Central pre-matric merit scholarship application verification and institute verification.,3.27
+SRV_0059,Education Scholarships Service #3,education_scholarships,Primary school online admission portal under Right to Education with randomized lottery.,1.56
+SRV_0060,Education Scholarships Service #4,education_scholarships,Academic bank of credits and digital locker degree verification gateway.,1.46
+SRV_0061,Education Scholarships Service #5,education_scholarships,Free textbook and educational kit supply tracking system for government schools.,3.67
+SRV_0062,Education Scholarships Service #6,education_scholarships,"Post-matric scholarship portal for SC, ST, and minority students with direct DBT transfer.",2.88
+SRV_0063,Education Scholarships Service #7,education_scholarships,Central pre-matric merit scholarship application verification and institute verification.,3.26
+SRV_0064,Education Scholarships Service #8,education_scholarships,Primary school online admission portal under Right to Education with randomized lottery.,4.06
+SRV_0065,Education Scholarships Service #9,education_scholarships,Academic bank of credits and digital locker degree verification gateway.,3.54
+SRV_0066,Education Scholarships Service #10,education_scholarships,Free textbook and educational kit supply tracking system for government schools.,3.21
+SRV_0067,Education Scholarships Service #11,education_scholarships,"Post-matric scholarship portal for SC, ST, and minority students with direct DBT transfer.",3.24
+SRV_0068,Education Scholarships Service #12,education_scholarships,Central pre-matric merit scholarship application verification and institute verification.,2.22
+SRV_0069,Education Scholarships Service #13,education_scholarships,Primary school online admission portal under Right to Education with randomized lottery.,1.12
+SRV_0070,Education Scholarships Service #14,education_scholarships,Academic bank of credits and digital locker degree verification gateway.,2.75
+SRV_0071,Land Records Property Service #1,land_records_property,"Digital computerized Record of Rights (RoR 7/12) viewing, downloading, and QR verification.",1.86
+SRV_0072,Land Records Property Service #2,land_records_property,Agricultural land online mutation and title transfer tracking with revenue officer approval.,2.63
+SRV_0073,Land Records Property Service #3,land_records_property,Property non-encumbrance certificate issuance and historical title deed search.,4.41
+SRV_0074,Land Records Property Service #4,land_records_property,Cadastral land survey maps and satellite parcel boundary visualization service.,1.94
+SRV_0075,Land Records Property Service #5,land_records_property,Tenancy record verification and agricultural lease agreement registry.,1.23
+SRV_0076,Land Records Property Service #6,land_records_property,"Digital computerized Record of Rights (RoR 7/12) viewing, downloading, and QR verification.",2.13
+SRV_0077,Land Records Property Service #7,land_records_property,Agricultural land online mutation and title transfer tracking with revenue officer approval.,2.17
+SRV_0078,Land Records Property Service #8,land_records_property,Property non-encumbrance certificate issuance and historical title deed search.,3.65
+SRV_0079,Land Records Property Service #9,land_records_property,Cadastral land survey maps and satellite parcel boundary visualization service.,3.23
+SRV_0080,Land Records Property Service #10,land_records_property,Tenancy record verification and agricultural lease agreement registry.,4.14
+SRV_0081,Land Records Property Service #11,land_records_property,"Digital computerized Record of Rights (RoR 7/12) viewing, downloading, and QR verification.",3.66
+SRV_0082,Land Records Property Service #12,land_records_property,Agricultural land online mutation and title transfer tracking with revenue officer approval.,2.63
+SRV_0083,Land Records Property Service #13,land_records_property,Property non-encumbrance certificate issuance and historical title deed search.,4.26
+SRV_0084,Land Records Property Service #14,land_records_property,Cadastral land survey maps and satellite parcel boundary visualization service.,1.67
+SRV_0085,Utilities Energy Service #1,utilities_energy,"Consumer electricity bill calculation, smart meter top-up, and online billing payment.",1.09
+SRV_0086,Utilities Energy Service #2,utilities_energy,New domestic electrical connection application with load feasibility study.,1.36
+SRV_0087,Utilities Energy Service #3,utilities_energy,Subsidized LPG cylinder booking confirmation and direct subsidy balance query.,3.89
+SRV_0088,Utilities Energy Service #4,utilities_energy,Grid-connected solar rooftop subsidy disbursement and net-metering tracker.,2.85
+SRV_0089,Utilities Energy Service #5,utilities_energy,Municipal piped drinking water supply connection and leak reporting portal.,1.65
+SRV_0090,Utilities Energy Service #6,utilities_energy,"Consumer electricity bill calculation, smart meter top-up, and online billing payment.",3.0
+SRV_0091,Utilities Energy Service #7,utilities_energy,New domestic electrical connection application with load feasibility study.,1.61
+SRV_0092,Utilities Energy Service #8,utilities_energy,Subsidized LPG cylinder booking confirmation and direct subsidy balance query.,3.79
+SRV_0093,Utilities Energy Service #9,utilities_energy,Grid-connected solar rooftop subsidy disbursement and net-metering tracker.,2.78
+SRV_0094,Utilities Energy Service #10,utilities_energy,Municipal piped drinking water supply connection and leak reporting portal.,2.52
+SRV_0095,Utilities Energy Service #11,utilities_energy,"Consumer electricity bill calculation, smart meter top-up, and online billing payment.",2.21
+SRV_0096,Utilities Energy Service #12,utilities_energy,New domestic electrical connection application with load feasibility study.,3.52
+SRV_0097,Utilities Energy Service #13,utilities_energy,Subsidized LPG cylinder booking confirmation and direct subsidy balance query.,2.45
+SRV_0098,Utilities Energy Service #14,utilities_energy,Grid-connected solar rooftop subsidy disbursement and net-metering tracker.,1.35
+SRV_0099,Transport Driving Service #1,transport_driving,"Permanent driving license application, slot booking for driving test, and smart card dispatch.",1.47
+SRV_0100,Transport Driving Service #2,transport_driving,Motor vehicle registration certificate (RC) renewal and address change module.,4.85
+SRV_0101,Transport Driving Service #3,transport_driving,Real-time e-Challan fine query and digital payment integration with traffic police.,4.63
+SRV_0102,Transport Driving Service #4,transport_driving,Commercial transport vehicle fitness certificate renewal and permit verification.,3.8
+SRV_0103,Transport Driving Service #5,transport_driving,Learner driving license online computer test and instantaneous certificate issuance.,2.06
+SRV_0104,Transport Driving Service #6,transport_driving,"Permanent driving license application, slot booking for driving test, and smart card dispatch.",4.88
+SRV_0105,Transport Driving Service #7,transport_driving,Motor vehicle registration certificate (RC) renewal and address change module.,4.12
+SRV_0106,Transport Driving Service #8,transport_driving,Real-time e-Challan fine query and digital payment integration with traffic police.,3.87
+SRV_0107,Transport Driving Service #9,transport_driving,Commercial transport vehicle fitness certificate renewal and permit verification.,2.8
+SRV_0108,Transport Driving Service #10,transport_driving,Learner driving license online computer test and instantaneous certificate issuance.,2.09
+SRV_0109,Transport Driving Service #11,transport_driving,"Permanent driving license application, slot booking for driving test, and smart card dispatch.",1.39
+SRV_0110,Transport Driving Service #12,transport_driving,Motor vehicle registration certificate (RC) renewal and address change module.,4.61
+SRV_0111,Transport Driving Service #13,transport_driving,Real-time e-Challan fine query and digital payment integration with traffic police.,2.82
+SRV_0112,Transport Driving Service #14,transport_driving,Commercial transport vehicle fitness certificate renewal and permit verification.,1.81
+SRV_0113,Social Welfare Subsidy Service #1,social_welfare_subsidy,Below Poverty Line (BPL) welfare scheme beneficiary inclusion and e-Ration linkage.,2.22
+SRV_0114,Social Welfare Subsidy Service #2,social_welfare_subsidy,Direct Benefit Transfer (DBT) payment status audit and Aadhaar payment bridge monitoring.,3.32
+SRV_0115,Social Welfare Subsidy Service #3,social_welfare_subsidy,Financial aid for daughters marriage and female education incentive schemes.,1.71
+SRV_0116,Social Welfare Subsidy Service #4,social_welfare_subsidy,Special assistance program for distressed unorganized sector handloom weavers.,4.43
+SRV_0117,Social Welfare Subsidy Service #5,social_welfare_subsidy,Tribal community traditional livelihood grant application and verification.,4.03
+SRV_0118,Social Welfare Subsidy Service #6,social_welfare_subsidy,Below Poverty Line (BPL) welfare scheme beneficiary inclusion and e-Ration linkage.,3.88
+SRV_0119,Social Welfare Subsidy Service #7,social_welfare_subsidy,Direct Benefit Transfer (DBT) payment status audit and Aadhaar payment bridge monitoring.,2.73
+SRV_0120,Social Welfare Subsidy Service #8,social_welfare_subsidy,Financial aid for daughters marriage and female education incentive schemes.,3.51
+SRV_0121,Social Welfare Subsidy Service #9,social_welfare_subsidy,Special assistance program for distressed unorganized sector handloom weavers.,3.34
+SRV_0122,Social Welfare Subsidy Service #10,social_welfare_subsidy,Tribal community traditional livelihood grant application and verification.,3.6
+SRV_0123,Social Welfare Subsidy Service #11,social_welfare_subsidy,Below Poverty Line (BPL) welfare scheme beneficiary inclusion and e-Ration linkage.,1.34
+SRV_0124,Social Welfare Subsidy Service #12,social_welfare_subsidy,Direct Benefit Transfer (DBT) payment status audit and Aadhaar payment bridge monitoring.,2.66
+SRV_0125,Social Welfare Subsidy Service #13,social_welfare_subsidy,Financial aid for daughters marriage and female education incentive schemes.,1.17
+SRV_0126,Social Welfare Subsidy Service #14,social_welfare_subsidy,Special assistance program for distressed unorganized sector handloom weavers.,2.98
+SRV_0127,Employment Labour Service #1,employment_labour,Unorganized worker registration portal (e-Shram) for social security benefits.,2.32
+SRV_0128,Employment Labour Service #2,employment_labour,"Provident fund employee claim settlement, pension passbook, and UAN management.",1.58
+SRV_0129,Employment Labour Service #3,employment_labour,State employment exchange registration and government job vacancy alert service.,1.41
+SRV_0130,Employment Labour Service #4,employment_labour,Building and other construction workers (BOCW) welfare board registration.,3.35
+SRV_0131,Employment Labour Service #5,employment_labour,Apprenticeship training placement matching and monthly stipend subsidy processing.,1.68
+SRV_0132,Employment Labour Service #6,employment_labour,Unorganized worker registration portal (e-Shram) for social security benefits.,4.7
+SRV_0133,Employment Labour Service #7,employment_labour,"Provident fund employee claim settlement, pension passbook, and UAN management.",3.32
+SRV_0134,Employment Labour Service #8,employment_labour,State employment exchange registration and government job vacancy alert service.,2.39
+SRV_0135,Employment Labour Service #9,employment_labour,Building and other construction workers (BOCW) welfare board registration.,3.36
+SRV_0136,Employment Labour Service #10,employment_labour,Apprenticeship training placement matching and monthly stipend subsidy processing.,1.09
+SRV_0137,Employment Labour Service #11,employment_labour,Unorganized worker registration portal (e-Shram) for social security benefits.,4.83
+SRV_0138,Employment Labour Service #12,employment_labour,"Provident fund employee claim settlement, pension passbook, and UAN management.",2.93
+SRV_0139,Employment Labour Service #13,employment_labour,State employment exchange registration and government job vacancy alert service.,4.13
+SRV_0140,Employment Labour Service #14,employment_labour,Building and other construction workers (BOCW) welfare board registration.,1.33
+SRV_0141,Housing Urban Dev Service #1,housing_urban_dev,Pradhan Mantri Awas Yojana (PMAY) urban housing beneficiary geo-tagged subsidy tracker.,2.95
+SRV_0142,Housing Urban Dev Service #2,housing_urban_dev,Automated building architectural plan scrutiny and structural safety approval.,2.96
+SRV_0143,Housing Urban Dev Service #3,housing_urban_dev,Urban local body municipal building permit and fire safety NOC issuance.,4.75
+SRV_0144,Housing Urban Dev Service #4,housing_urban_dev,Slum rehabilitation allotment lottery and tenant biometric identification.,3.29
+SRV_0145,Housing Urban Dev Service #5,housing_urban_dev,Rainwater harvesting incentive approval and urban drainage compliance.,2.89
+SRV_0146,Housing Urban Dev Service #6,housing_urban_dev,Pradhan Mantri Awas Yojana (PMAY) urban housing beneficiary geo-tagged subsidy tracker.,2.07
+SRV_0147,Housing Urban Dev Service #7,housing_urban_dev,Automated building architectural plan scrutiny and structural safety approval.,2.33
+SRV_0148,Housing Urban Dev Service #8,housing_urban_dev,Urban local body municipal building permit and fire safety NOC issuance.,3.08
+SRV_0149,Housing Urban Dev Service #9,housing_urban_dev,Slum rehabilitation allotment lottery and tenant biometric identification.,2.76
+SRV_0150,Housing Urban Dev Service #10,housing_urban_dev,Rainwater harvesting incentive approval and urban drainage compliance.,1.09
+SRV_0151,Housing Urban Dev Service #11,housing_urban_dev,Pradhan Mantri Awas Yojana (PMAY) urban housing beneficiary geo-tagged subsidy tracker.,4.31
+SRV_0152,Housing Urban Dev Service #12,housing_urban_dev,Automated building architectural plan scrutiny and structural safety approval.,4.58
+SRV_0153,Housing Urban Dev Service #13,housing_urban_dev,Urban local body municipal building permit and fire safety NOC issuance.,1.56
+SRV_0154,Housing Urban Dev Service #14,housing_urban_dev,Slum rehabilitation allotment lottery and tenant biometric identification.,3.22
+SRV_0155,Agriculture Farmers Service #1,agriculture_farmers,PM-KISAN Samman Nidhi installment status and e-KYC bank account seeding tracker.,1.43
+SRV_0156,Agriculture Farmers Service #2,agriculture_farmers,Pradhan Mantri Fasal Bima Yojana (PMFBY) crop insurance enrollment and damage claim.,3.69
+SRV_0157,Agriculture Farmers Service #3,agriculture_farmers,Soil Health Card testing recommendation and customized nutrient advisory service.,2.12
+SRV_0158,Agriculture Farmers Service #4,agriculture_farmers,Real-time agricultural market mandi commodity arrival and wholesale price information.,3.64
+SRV_0159,Agriculture Farmers Service #5,agriculture_farmers,Subsidized micro-irrigation drip and sprinkler equipment distribution portal.,3.91
+SRV_0160,Agriculture Farmers Service #6,agriculture_farmers,PM-KISAN Samman Nidhi installment status and e-KYC bank account seeding tracker.,4.07
+SRV_0161,Agriculture Farmers Service #7,agriculture_farmers,Pradhan Mantri Fasal Bima Yojana (PMFBY) crop insurance enrollment and damage claim.,1.43
+SRV_0162,Agriculture Farmers Service #8,agriculture_farmers,Soil Health Card testing recommendation and customized nutrient advisory service.,4.66
+SRV_0163,Agriculture Farmers Service #9,agriculture_farmers,Real-time agricultural market mandi commodity arrival and wholesale price information.,1.92
+SRV_0164,Agriculture Farmers Service #10,agriculture_farmers,Subsidized micro-irrigation drip and sprinkler equipment distribution portal.,1.15
+SRV_0165,Agriculture Farmers Service #11,agriculture_farmers,PM-KISAN Samman Nidhi installment status and e-KYC bank account seeding tracker.,3.22
+SRV_0166,Agriculture Farmers Service #12,agriculture_farmers,Pradhan Mantri Fasal Bima Yojana (PMFBY) crop insurance enrollment and damage claim.,2.48
+SRV_0167,Agriculture Farmers Service #13,agriculture_farmers,Soil Health Card testing recommendation and customized nutrient advisory service.,4.32
+SRV_0168,Agriculture Farmers Service #14,agriculture_farmers,Real-time agricultural market mandi commodity arrival and wholesale price information.,4.23
+SRV_0169,Business Licensing Service #1,business_licensing,"Single Window Clearance System for industrial setting, factory approval, and power sanction.",2.27
+SRV_0170,Business Licensing Service #2,business_licensing,Shops and commercial establishment online registration and renewal certification.,4.81
+SRV_0171,Business Licensing Service #3,business_licensing,"Food safety FSSAI license application, hygiene inspection, and certification.",2.16
+SRV_0172,Business Licensing Service #4,business_licensing,Fire and rescue safety certificate (NOC) application and compliance audit.,3.06
+SRV_0173,Business Licensing Service #5,business_licensing,Pollution control board consent to establish and operate industrial plants.,2.02
+SRV_0174,Business Licensing Service #6,business_licensing,"Single Window Clearance System for industrial setting, factory approval, and power sanction.",4.74
+SRV_0175,Business Licensing Service #7,business_licensing,Shops and commercial establishment online registration and renewal certification.,1.66
+SRV_0176,Business Licensing Service #8,business_licensing,"Food safety FSSAI license application, hygiene inspection, and certification.",1.18
+SRV_0177,Business Licensing Service #9,business_licensing,Fire and rescue safety certificate (NOC) application and compliance audit.,2.74
+SRV_0178,Business Licensing Service #10,business_licensing,Pollution control board consent to establish and operate industrial plants.,4.97
+SRV_0179,Business Licensing Service #11,business_licensing,"Single Window Clearance System for industrial setting, factory approval, and power sanction.",4.57
+SRV_0180,Business Licensing Service #12,business_licensing,Shops and commercial establishment online registration and renewal certification.,3.99
+SRV_0181,Business Licensing Service #13,business_licensing,"Food safety FSSAI license application, hygiene inspection, and certification.",4.56
+SRV_0182,Business Licensing Service #14,business_licensing,Fire and rescue safety certificate (NOC) application and compliance audit.,4.57
+SRV_0183,Police Citizen Safety Service #1,police_citizen_safety,Lost article report generation and digitally authenticated police certificate.,3.08
+SRV_0184,Police Citizen Safety Service #2,police_citizen_safety,"Domestic worker, tenant, and employee police background verification service.",2.26
+SRV_0185,Police Citizen Safety Service #3,police_citizen_safety,Senior citizen police beat registration and vulnerable citizen emergency SOS app.,4.09
+SRV_0186,Police Citizen Safety Service #4,police_citizen_safety,Non-cognizable offence e-complaint registration and status tracking.,3.65
+SRV_0187,Police Citizen Safety Service #5,police_citizen_safety,Cybercrime online complaint filing and financial freeze coordination desk.,2.49
+SRV_0188,Police Citizen Safety Service #6,police_citizen_safety,Lost article report generation and digitally authenticated police certificate.,1.38
+SRV_0189,Police Citizen Safety Service #7,police_citizen_safety,"Domestic worker, tenant, and employee police background verification service.",3.99
+SRV_0190,Police Citizen Safety Service #8,police_citizen_safety,Senior citizen police beat registration and vulnerable citizen emergency SOS app.,2.05
+SRV_0191,Police Citizen Safety Service #9,police_citizen_safety,Non-cognizable offence e-complaint registration and status tracking.,4.75
+SRV_0192,Police Citizen Safety Service #10,police_citizen_safety,Cybercrime online complaint filing and financial freeze coordination desk.,1.96
+SRV_0193,Police Citizen Safety Service #11,police_citizen_safety,Lost article report generation and digitally authenticated police certificate.,1.49
+SRV_0194,Police Citizen Safety Service #12,police_citizen_safety,"Domestic worker, tenant, and employee police background verification service.",4.32
+SRV_0195,Police Citizen Safety Service #13,police_citizen_safety,Senior citizen police beat registration and vulnerable citizen emergency SOS app.,1.61
+SRV_0196,Police Citizen Safety Service #14,police_citizen_safety,Non-cognizable offence e-complaint registration and status tracking.,1.72
+SRV_0197,Public Distribution Food Service #1,public_distribution_food,"Digital smart ration card application, member addition, and deletion.",3.4
+SRV_0198,Public Distribution Food Service #2,public_distribution_food,National Food Security Act (NFSA) monthly subsidized grain quota allocation query.,4.5
+SRV_0199,Public Distribution Food Service #3,public_distribution_food,"Fair Price Shop (FPS) dealer location, stock availability, and electronic PoS audit.",1.79
+SRV_0200,Public Distribution Food Service #4,public_distribution_food,One Nation One Ration Card portability transaction history and biometric authentication.,2.24
+SRV_0201,Public Distribution Food Service #5,public_distribution_food,Grievance redressal for grain quality and fair price shop overcharging.,4.11
+SRV_0202,Public Distribution Food Service #6,public_distribution_food,"Digital smart ration card application, member addition, and deletion.",4.89
+SRV_0203,Public Distribution Food Service #7,public_distribution_food,National Food Security Act (NFSA) monthly subsidized grain quota allocation query.,3.0
+SRV_0204,Public Distribution Food Service #8,public_distribution_food,"Fair Price Shop (FPS) dealer location, stock availability, and electronic PoS audit.",1.58
+SRV_0205,Public Distribution Food Service #9,public_distribution_food,One Nation One Ration Card portability transaction history and biometric authentication.,1.06
+SRV_0206,Public Distribution Food Service #10,public_distribution_food,Grievance redressal for grain quality and fair price shop overcharging.,1.92
+SRV_0207,Public Distribution Food Service #11,public_distribution_food,"Digital smart ration card application, member addition, and deletion.",1.53
+SRV_0208,Public Distribution Food Service #12,public_distribution_food,National Food Security Act (NFSA) monthly subsidized grain quota allocation query.,3.71
+SRV_0209,Public Distribution Food Service #13,public_distribution_food,"Fair Price Shop (FPS) dealer location, stock availability, and electronic PoS audit.",1.49
+SRV_0210,Public Distribution Food Service #14,public_distribution_food,One Nation One Ration Card portability transaction history and biometric authentication.,3.03
