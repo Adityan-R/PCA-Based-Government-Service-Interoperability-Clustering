@@ -35,131 +35,145 @@ st.set_page_config(
 )
 
 # -----------------------------------------------------------------------------
-# CUSTOM ENTERPRISE GOVTECH CSS STYLING
+# CUSTOM BOT MATRIX CSS STYLING
 # -----------------------------------------------------------------------------
 st.markdown(
     """
     <style>
-    /* Global Clean Font Stack */
-    html, body, [class*="css"] {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+
+    /* Global Bot Matrix Monospace Font Stack */
+    html, body, [class*="css"], .stMarkdown, .stText, p, span, div, input, select, button, label, textarea {
+        font-family: 'JetBrains Mono', 'Share Tech Mono', Consolas, 'Courier New', monospace !important;
     }
 
-    /* Hero Banner Header */
+    h1, h2, h3, h4, h5, h6, .hero-title, .metric-title {
+        font-family: 'Share Tech Mono', 'JetBrains Mono', Consolas, monospace !important;
+        letter-spacing: 0.05em;
+    }
+
+    /* Matrix Hero Banner */
     .hero-container {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 14px;
+        background: linear-gradient(135deg, #050b0a 0%, #0d1a16 50%, #07120e 100%);
+        border: 1px solid rgba(0, 255, 136, 0.3);
+        border-radius: 12px;
         padding: 24px 28px;
         margin-bottom: 24px;
         color: #ffffff;
-        box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.4);
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.08), inset 0 0 15px rgba(0, 255, 136, 0.03);
     }
     .hero-tag {
         display: inline-block;
-        background: rgba(99, 102, 241, 0.25);
-        color: #a5b4fc;
-        border: 1px solid rgba(99, 102, 241, 0.5);
-        font-size: 0.75rem;
+        background: rgba(0, 255, 136, 0.12);
+        color: #00ff88;
+        border: 1px solid rgba(0, 255, 136, 0.45);
+        font-size: 0.72rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        padding: 4px 10px;
-        border-radius: 9999px;
+        letter-spacing: 0.14em;
+        padding: 4px 12px;
+        border-radius: 4px;
         margin-bottom: 12px;
+        font-family: 'Share Tech Mono', monospace !important;
     }
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
         font-weight: 800;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.03em;
         margin-bottom: 8px;
-        background: linear-gradient(90deg, #ffffff 0%, #cbd5e1 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #f8fafc;
+        text-shadow: 0 0 12px rgba(0, 255, 136, 0.25);
     }
     .hero-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.88rem;
         color: #94a3b8;
-        line-height: 1.5;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
         margin-bottom: 0px;
     }
 
-    /* KPI Summary Cards */
+    /* Matrix KPI Stat Cards */
     .metric-card {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(148, 163, 184, 0.15);
-        border-radius: 12px;
+        background: rgba(13, 26, 22, 0.45);
+        border: 1px solid rgba(0, 255, 136, 0.22);
+        border-radius: 8px;
         padding: 16px 18px;
-        transition: transform 0.2s ease, border-color 0.2s ease;
+        transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
     .metric-card:hover {
-        border-color: rgba(99, 102, 241, 0.4);
+        border-color: rgba(0, 255, 136, 0.65);
+        box-shadow: 0 0 18px rgba(0, 255, 136, 0.2);
         transform: translateY(-2px);
     }
     .metric-title {
-        font-size: 0.78rem;
+        font-size: 0.75rem;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.08em;
         color: #64748b;
         margin-bottom: 4px;
     }
     .metric-value {
         font-size: 1.6rem;
         font-weight: 800;
-        color: #0f172a;
+        color: #00ff88;
         margin-bottom: 2px;
-    }
-    @media (prefers-color-scheme: dark) {
-        .metric-value {
-            color: #f8fafc;
-        }
+        text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
     }
     .metric-sub {
-        font-size: 0.8rem;
-        color: #10b981;
+        font-size: 0.78rem;
+        color: #00e5ff;
         font-weight: 500;
+        letter-spacing: 0.02em;
     }
 
     /* Action Badges */
     .badge-merge {
-        background-color: #fee2e2;
-        color: #b91c1c;
+        background-color: rgba(239, 68, 68, 0.18);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.4);
         padding: 3px 8px;
-        border-radius: 6px;
+        border-radius: 4px;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
     }
     .badge-gateway {
-        background-color: #fef3c7;
-        color: #b45309;
+        background-color: rgba(245, 158, 11, 0.18);
+        color: #fbbf24;
+        border: 1px solid rgba(245, 158, 11, 0.4);
         padding: 3px 8px;
-        border-radius: 6px;
+        border-radius: 4px;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
     }
     .badge-sso {
-        background-color: #dbeafe;
-        color: #1d4ed8;
+        background-color: rgba(59, 130, 246, 0.18);
+        color: #60a5fa;
+        border: 1px solid rgba(59, 130, 246, 0.4);
         padding: 3px 8px;
-        border-radius: 6px;
+        border-radius: 4px;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
     }
     .badge-coexist {
-        background-color: #d1fae5;
-        color: #047857;
+        background-color: rgba(16, 185, 129, 0.18);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.4);
         padding: 3px 8px;
-        border-radius: 6px;
+        border-radius: 4px;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
     }
 
     /* Subheader Stylings */
     .section-header {
         font-size: 1.15rem;
         font-weight: 700;
-        letter-spacing: -0.01em;
+        letter-spacing: 0.02em;
         margin-top: 10px;
         margin-bottom: 8px;
     }
@@ -420,14 +434,31 @@ def main():
                 hover_name="platform_name",
                 hover_data={"tier": True, "PC1": False, "PC2": False, "PC3": False, "dynamic_cluster": True},
                 color_discrete_sequence=color_discrete,
-                title=f"3D PCA Manifold (PC1: {pca_full.explained_variance_ratio_[0]*100:.1f}%, PC2: {pca_full.explained_variance_ratio_[1]*100:.1f}%, PC3: {pca_full.explained_variance_ratio_[2]*100:.1f}% var)",
+                labels={"dynamic_cluster": "Cluster"},
                 height=650,
+                template="plotly_dark",
             )
             fig_cluster.update_traces(
-                marker=dict(size=7, opacity=0.88, line=dict(width=0.5, color="#0f172a"))
+                marker=dict(size=7, opacity=0.88, line=dict(width=0.5, color="#ffffff"))
             )
             fig_cluster.update_layout(
-                margin=dict(l=0, r=0, b=0, t=40),
+                title=dict(
+                    text=f"3D PCA Manifold (PC1: {pca_full.explained_variance_ratio_[0]*100:.1f}%, PC2: {pca_full.explained_variance_ratio_[1]*100:.1f}%, PC3: {pca_full.explained_variance_ratio_[2]*100:.1f}% var)",
+                    x=0.01,
+                    y=0.98,
+                    xanchor="left",
+                    font=dict(family="'Share Tech Mono', monospace", size=14),
+                ),
+                font=dict(family="'JetBrains Mono', monospace"),
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.06,
+                    xanchor="center",
+                    x=0.5,
+                    title_text="",
+                ),
+                margin=dict(l=10, r=10, b=40, t=50),
                 scene=dict(
                     xaxis_title=f"PC1 ({pca_full.explained_variance_ratio_[0]*100:.1f}%)",
                     yaxis_title=f"PC2 ({pca_full.explained_variance_ratio_[1]*100:.1f}%)",
@@ -453,18 +484,34 @@ def main():
                 hover_name="platform_name",
                 hover_data={"tier": True, x_col: False, y_col: False, "dynamic_cluster": True},
                 color_discrete_sequence=color_discrete,
-                title=f"Platform Clusters in {proj_type} Space (Algorithm: {algorithm}, k={metrics['n_clusters']:.0f})",
-                height=560,
-                template="plotly_white",
+                labels={"dynamic_cluster": "Cluster"},
+                height=580,
+                template="plotly_dark",
             )
             fig_cluster.update_traces(
-                marker=dict(size=14, line=dict(width=1.2, color="#0f172a"), opacity=0.9)
+                marker=dict(size=14, line=dict(width=1.0, color="#ffffff"), opacity=0.9)
             )
             fig_cluster.update_layout(
+                title=dict(
+                    text=f"Platform Clusters in {proj_type} Space (Algorithm: {algorithm}, k={metrics['n_clusters']:.0f})",
+                    x=0.01,
+                    y=0.98,
+                    xanchor="left",
+                    yanchor="top",
+                    font=dict(family="'Share Tech Mono', monospace", size=14),
+                ),
+                font=dict(family="'JetBrains Mono', monospace"),
                 xaxis_title=x_label,
                 yaxis_title=y_label,
-                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-                margin=dict(t=60, b=30, l=40, r=40),
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.16,
+                    xanchor="center",
+                    x=0.5,
+                    title_text="",
+                ),
+                margin=dict(t=50, b=80, l=40, r=40),
             )
             st.plotly_chart(fig_cluster, use_container_width=True)
 
@@ -503,11 +550,16 @@ def main():
                     orientation="h",
                     title=f"Dominant Functional Categories for {sel_cluster}",
                     color="Mean Coverage",
-                    color_continuous_scale="Purples",
+                    color_continuous_scale="Greens",
                     height=250,
-                    template="plotly_white",
+                    template="plotly_dark",
                 )
-                fig_cat.update_layout(yaxis=dict(autorange="reversed"), margin=dict(t=40, b=20, l=10, r=10))
+                fig_cat.update_layout(
+                    title=dict(x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
+                    font=dict(family="'JetBrains Mono', monospace"),
+                    yaxis=dict(autorange="reversed"),
+                    margin=dict(t=40, b=20, l=10, r=10),
+                )
                 st.plotly_chart(fig_cat, use_container_width=True)
 
     # -------------------------------------------------------------------------
@@ -561,8 +613,12 @@ def main():
             zmax=1.0,
             aspect="auto",
             height=620,
+            template="plotly_dark",
         )
-        fig_heat.update_layout(margin=dict(t=30, b=30, l=30, r=30))
+        fig_heat.update_layout(
+            font=dict(family="'JetBrains Mono', monospace"),
+            margin=dict(t=30, b=30, l=30, r=30),
+        )
         st.plotly_chart(fig_heat, use_container_width=True)
 
         # Platform-to-Platform Comparison Tool
@@ -617,10 +673,16 @@ def main():
                         color="Platform",
                         barmode="group",
                         title=f"Service Category Alignment: {p_a} vs {p_b}",
-                        height=280,
-                        template="plotly_white",
+                        height=310,
+                        template="plotly_dark",
+                        color_discrete_sequence=["#00ff88", "#00e5ff"],
                     )
-                    fig_radar.update_layout(margin=dict(t=40, b=20, l=10, r=10))
+                    fig_radar.update_layout(
+                        title=dict(x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
+                        font=dict(family="'JetBrains Mono', monospace"),
+                        legend=dict(orientation="h", yanchor="top", y=-0.25, xanchor="center", x=0.5, title_text=""),
+                        margin=dict(t=40, b=70, l=10, r=10),
+                    )
                     st.plotly_chart(fig_radar, use_container_width=True)
 
     # -------------------------------------------------------------------------
@@ -647,7 +709,7 @@ def main():
                     x=scree_df["component_label"][:max_plot_comps],
                     y=scree_df["explained_variance_ratio"][:max_plot_comps] * 100,
                     name="Individual Var %",
-                    marker_color="#4f46e5",
+                    marker_color="#00ff88",
                     opacity=0.85,
                 )
             )
@@ -657,8 +719,8 @@ def main():
                     y=scree_df["cumulative_variance_ratio"][:max_plot_comps] * 100,
                     name="Cumulative Var %",
                     mode="lines+markers",
-                    marker=dict(size=6, color="#f43f5e"),
-                    line=dict(width=2.5, color="#f43f5e"),
+                    marker=dict(size=6, color="#00e5ff"),
+                    line=dict(width=2.5, color="#00e5ff"),
                     yaxis="y2",
                 )
             )
@@ -667,15 +729,17 @@ def main():
                 y=pca_variance * 100,
                 yref="y2",
                 line_dash="dot",
-                line_color="#10b981",
+                line_color="#f59e0b",
                 annotation_text=f"Target: {pca_variance*100:.0f}%",
                 annotation_position="bottom right",
             )
 
             fig_scree.update_layout(
-                template="plotly_white",
+                template="plotly_dark",
                 height=460,
-                yaxis=dict(title="Individual Variance (%)", showgrid=True, gridcolor="#f1f5f9"),
+                title=dict(text="Cumulative & Individual Explained Variance", x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
+                font=dict(family="'JetBrains Mono', monospace"),
+                yaxis=dict(title="Individual Variance (%)", showgrid=True, gridcolor="#1e293b"),
                 yaxis2=dict(
                     title="Cumulative Variance (%)",
                     overlaying="y",
@@ -683,7 +747,7 @@ def main():
                     range=[0, 105],
                     showgrid=False,
                 ),
-                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                legend=dict(orientation="h", yanchor="bottom", y=1.04, xanchor="right", x=1, title_text=""),
                 margin=dict(t=50, b=30, l=40, r=40),
             )
             st.plotly_chart(fig_scree, use_container_width=True)
@@ -708,9 +772,11 @@ def main():
                 color_continuous_scale="RdBu",
                 title=f"Highest Magnitude Drivers for {comp_selected}",
                 height=460,
-                template="plotly_white",
+                template="plotly_dark",
             )
             fig_bar.update_layout(
+                title=dict(x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
+                font=dict(family="'JetBrains Mono', monospace"),
                 yaxis=dict(autorange="reversed"),
                 margin=dict(t=50, b=30, l=40, r=20),
                 coloraxis_showscale=False,
@@ -736,13 +802,18 @@ def main():
             y="adjusted_rand_index",
             color="algorithm",
             barmode="group",
-            title="Ground Truth Alignment (Adjusted Rand Index) across Dimensionality Representations",
+            title="Ground Truth Alignment (ARI) across Representations",
             labels={"adjusted_rand_index": "Adjusted Rand Index (ARI)", "representation": "Representation"},
-            height=380,
-            template="plotly_white",
-            color_discrete_sequence=["#4f46e5", "#06b6d4", "#f59e0b"],
+            height=390,
+            template="plotly_dark",
+            color_discrete_sequence=["#00ff88", "#00e5ff", "#f59e0b"],
         )
-        fig_bench.update_layout(margin=dict(t=40, b=40, l=30, r=20), legend=dict(orientation="h", y=1.05))
+        fig_bench.update_layout(
+            title=dict(x=0.01, font=dict(family="'Share Tech Mono', monospace", size=13)),
+            font=dict(family="'JetBrains Mono', monospace"),
+            legend=dict(orientation="h", yanchor="top", y=-0.22, xanchor="center", x=0.5, title_text=""),
+            margin=dict(t=45, b=70, l=30, r=20),
+        )
         st.plotly_chart(fig_bench, use_container_width=True)
 
         st.markdown("##### Detailed Metric Matrix")
