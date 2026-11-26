@@ -30,7 +30,6 @@ from src.overlap import compute_pairwise_overlap_matrix, generate_recommendation
 # -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="GovPlatform Interoperability Suite · SIH26129",
-    page_icon="🏛️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -214,7 +213,7 @@ def main():
     # SIDEBAR CONTROLS
     # -------------------------------------------------------------------------
     with st.sidebar:
-        st.markdown("### 🎛️ **Clustering & PCA Engine**")
+        st.markdown("### **Clustering & PCA Engine**")
         st.caption("Adjust dimensionality and clustering algorithms in real time.")
 
         algorithm = st.selectbox(
@@ -243,7 +242,7 @@ def main():
         )
 
         st.markdown("---")
-        st.markdown("### 🗺️ **Visualization Settings**")
+        st.markdown("### **Visualization Settings**")
         proj_dimension = st.radio(
             "Projection Space",
             ["2D Projection", "3D Interactive Space"],
@@ -290,7 +289,7 @@ def main():
         """
         <div class="hero-container">
             <span class="hero-tag">Smart India Hackathon · SIH26129</span>
-            <div class="hero-title">🏛️ Interoperability Clustering of Government Digital Platforms</div>
+            <div class="hero-title">Interoperability Clustering of Government Digital Platforms</div>
             <div class="hero-subtitle">
                 Automated high-dimensional feature synthesis, variance-preserving PCA dimensionality reduction,
                 and unsupervised clustering to detect cross-departmental service overlaps and consolidation targets.
@@ -304,9 +303,8 @@ def main():
     is_synthetic = bool(platforms_df["is_synthetic"].iloc[0]) if "is_synthetic" in platforms_df.columns else True
     if is_synthetic:
         st.info(
-            "ℹ️ **Evaluation Dataset**: Active simulation across **49 platforms**, **210 digital services**, and **15 administrative categories**. "
-            "Planted ground truth clusters are strictly segregated for ARI/NMI external validation.",
-            icon="📊",
+            "**Evaluation Dataset**: Active simulation across **49 platforms**, **210 digital services**, and **15 administrative categories**. "
+            "Planted ground truth clusters are strictly segregated for ARI/NMI external validation."
         )
 
     # -------------------------------------------------------------------------
@@ -383,12 +381,12 @@ def main():
     # -------------------------------------------------------------------------
     tab_map, tab_heat, tab_pca, tab_bench, tab_recs, tab_arch = st.tabs(
         [
-            "🗺️ Cluster Space",
-            "🔥 Overlap Matrix",
-            "📊 PCA Spectrum & Loadings",
-            "🔬 Ablation Benchmark",
-            "📋 Interoperability Actions",
-            "📐 System Architecture",
+            "Cluster Space",
+            "Overlap Matrix",
+            "PCA Spectrum & Loadings",
+            "Ablation Benchmark",
+            "Interoperability Actions",
+            "System Architecture",
         ]
     )
 
@@ -396,7 +394,7 @@ def main():
     # TAB 1: CLUSTER SPACE (2D & 3D)
     # -------------------------------------------------------------------------
     with tab_map:
-        st.markdown("#### 🗺️ Platform Distribution in Reduced Feature Space")
+        st.markdown("#### Platform Distribution in Reduced Feature Space")
         st.caption(
             "Visualizing government platforms clustered by service-usage features. "
             "Adjacent platforms exhibit high shared service capabilities and redundant citizen workflows."
@@ -472,7 +470,7 @@ def main():
 
         # Cluster Breakdown Inspector
         st.markdown("---")
-        st.markdown("##### 🔍 Cluster Deep-Dive Directory")
+        st.markdown("##### Cluster Deep-Dive Directory")
         c_left, c_right = st.columns([1, 1])
 
         with c_left:
@@ -516,7 +514,7 @@ def main():
     # TAB 2: OVERLAP MATRIX & COMPARATOR
     # -------------------------------------------------------------------------
     with tab_heat:
-        st.markdown("#### 🔥 Pairwise Platform Service Overlap Heatmap")
+        st.markdown("#### Pairwise Platform Service Overlap Heatmap")
         st.caption(
             "Blended similarity score: $0.65 \\times \\text{CosineSim}(\\text{Categories}) + 0.35 \\times \\text{Jaccard}(\\text{Active Services})$. "
             "Values approaching **1.0 (bright yellow)** identify high redundancy."
@@ -569,7 +567,7 @@ def main():
 
         # Platform-to-Platform Comparison Tool
         st.markdown("---")
-        st.markdown("##### ⚖️ Head-to-Head Platform Comparator")
+        st.markdown("##### Head-to-Head Platform Comparator")
         comp_col1, comp_col2 = st.columns(2)
         with comp_col1:
             p_a = st.selectbox("Select Platform A:", platforms_df["platform_name"].tolist(), index=0)
@@ -629,7 +627,7 @@ def main():
     # TAB 3: PCA VARIANCE SPECTRUM & LOADINGS
     # -------------------------------------------------------------------------
     with tab_pca:
-        st.markdown("#### 📊 PCA Dimensionality Reduction Spectrum & Feature Drivers")
+        st.markdown("#### PCA Dimensionality Reduction Spectrum & Feature Drivers")
         st.caption(
             "SIH26129 Step 2: Unsupervised feature reduction preserves service-overlap variance while pruning uncorrelated noise. "
             "Feature loadings explain the primary latent semantic axes of government functionality."
@@ -723,7 +721,7 @@ def main():
     # TAB 4: ABLATION BENCHMARK
     # -------------------------------------------------------------------------
     with tab_bench:
-        st.markdown("#### 🔬 Empirical Representation & Algorithm Benchmark")
+        st.markdown("#### Empirical Representation & Algorithm Benchmark")
         st.caption(
             "Ground-truth external validation comparing Raw Unreduced features (149D) against PCA reduced features (various dimensions) and UMAP. "
             "Evaluated using Adjusted Rand Index (ARI), Normalized Mutual Information (NMI), and Random Seed Stability."
@@ -764,17 +762,16 @@ def main():
         )
 
         st.success(
-            "💡 **SIH26129 Empirical Takeaway**: High-dimensional raw service features suffer from the curse of dimensionality, "
+            "**SIH26129 Empirical Takeaway**: High-dimensional raw service features suffer from the curse of dimensionality, "
             "causing clustering stability across random seeds to degrade to ~0.71. Applying PCA dimensionality reduction preserves 92% "
-            "relevant variance, boosts clustering separation, and achieves perfect **ARI = 1.000** ground truth alignment with 100% stability.",
-            icon="🏆",
+            "relevant variance, boosts clustering separation, and achieves perfect **ARI = 1.000** ground truth alignment with 100% stability."
         )
 
     # -------------------------------------------------------------------------
     # TAB 5: INTEROPERABILITY ACTIONS (RECOMMENDATIONS)
     # -------------------------------------------------------------------------
     with tab_recs:
-        st.markdown("#### 📋 Prioritized Interoperability Policy Recommendations")
+        st.markdown("#### Prioritized Interoperability Policy Recommendations")
         st.caption(
             "SIH26129 Step 3: Algorithmic recommendations for digital governance rationalization. "
             "Identifies specific consolidation actions based on pairwise overlap thresholds."
@@ -876,7 +873,7 @@ def main():
 
         csv_download = filtered.to_csv(index=False).encode("utf-8")
         st.download_button(
-            label="📥 Export Policy Recommendations (CSV)",
+            label="Export Policy Recommendations (CSV)",
             data=csv_download,
             file_name="sih26129_interoperability_recommendations.csv",
             mime="text/csv",
@@ -886,7 +883,7 @@ def main():
     # TAB 6: SYSTEM ARCHITECTURE & METHODOLOGY
     # -------------------------------------------------------------------------
     with tab_arch:
-        st.markdown("#### 📐 SIH26129 System Architecture & Mathematical Foundations")
+        st.markdown("#### SIH26129 System Architecture & Mathematical Foundations")
         st.markdown(
             """
             This platform solves **Problem SIH26129**: Disconnected government digital portals often duplicate services,
