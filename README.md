@@ -9,7 +9,7 @@ Designed to identify redundant, overlapping, or fragmented government digital pl
 
 ---
 
-## 🏛️ Problem Overview
+## Problem Overview
 
 Across central, state, and municipal tiers, government agencies in India maintain hundreds of independent portals and mobile applications (e.g., UMANG, DigiLocker, state-level e-District portals, SARATHI, PM-KISAN, and municipal billing desks). Because citizen service delivery data is fragmented across administrative silos:
 - Citizen experiences suffer from duplicate credentialing and conflicting forms.
@@ -27,7 +27,7 @@ Build a mathematically rigorous, explainable pipeline that:
 
 ---
 
-## 🏗️ Architecture & Pipeline
+## Architecture & Pipeline
 
 ```mermaid
 flowchart TD
@@ -72,7 +72,7 @@ flowchart TD
 
 ---
 
-## 📊 Empirical Results & Benchmarks
+## Empirical Results & Benchmarks
 
 From our benchmark evaluation run (`data/processed/benchmark.csv`):
 
@@ -92,7 +92,7 @@ From our benchmark evaluation run (`data/processed/benchmark.csv`):
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -138,7 +138,7 @@ project/
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Requirements
 - Python 3.10+ (Tested on Python 3.10, 3.11, 3.12, 3.14)
@@ -194,7 +194,7 @@ The loader expects a CSV containing platform metadata and category coverage. Any
 
 ---
 
-## ⚠️ Limitations & Honest Discussion
+## Limitations & Honest Discussion
 
 1. **PCA Preserves Variance, Not Semantic Overlap Directly**:
    - PCA is an unsupervised linear projection that identifies orthogonal axes of maximum variance. While it effectively compacts correlated feature blocks (e.g., multi-lingual support, mobile usage, and request volumes) and removes noisy uninformative dimensions, high variance does not automatically equal functional redundancy.
@@ -206,7 +206,7 @@ The loader expects a CSV containing platform metadata and category coverage. Any
 
 ---
 
-## 🚀 Future Roadmap
+## Future Roadmap
 
 - **Graph Neural Networks (GNNs)**: Model government platforms and citizens as bipartite interaction graphs to discover implicit referral workflows.
 - **Automated Open-API Contract Harmonization**: Auto-generate OpenAPI 3.0 specifications for overlapping platforms identified for shared API gateways.
@@ -214,5 +214,5 @@ The loader expects a CSV containing platform metadata and category coverage. Any
 
 ---
 
-## 📄 License
+## License
 MIT License. Built for Smart India Hackathon (SIH26129).
